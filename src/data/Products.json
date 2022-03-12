@@ -1,0 +1,38 @@
+[
+    {
+        "index": 1,
+        "name": "Product 1",
+        "price": 10,
+        "description": "Product 1 description"
+    },
+    {
+        "index": 2,
+        "name": "Product 2",
+        "price": 20,
+        "description": "Product 2 description"
+    },
+    {
+        "index": 3,
+        "name": "Product 3",
+        "price": 30,
+        "description": "Product 3 description"
+    },
+    {
+        "index": 4,
+        "name": "Product 4",
+        "price": 40,
+        "description": "Product 4 description"
+    },
+    {
+        "index": 5,
+        "name": "Product 5",
+        "price": 50,
+        "description": "Product 5 description"
+    },
+    {
+        "index": 6,
+        "name": "Product 6",
+        "price": 60,
+        "description": "Product 6 description"
+    }
+]

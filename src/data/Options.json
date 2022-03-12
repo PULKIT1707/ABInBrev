@@ -1,0 +1,11 @@
+[
+    { 
+        "value": "chocolate", 
+        "label": "chocolate" },
+    { 
+        "value": "strawberry", 
+        "label": "strawberry" },
+    { 
+        "value": "vanilla", 
+        "label": "Vanilla" }
+  ]
