@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Rewards/static/css/main.43e581fd.css",
+    "main.js": "/Rewards/static/js/main.6e0bd5c9.js",
+    "static/js/787.e9922b5c.chunk.js": "/Rewards/static/js/787.e9922b5c.chunk.js",
+    "static/media/Welcome_Banner.png": "/Rewards/static/media/Welcome_Banner.912cb3583d6029cbfe03.png",
+    "static/media/reward-pic.jpg": "/Rewards/static/media/reward-pic.8db69a5cc3f09e0e961c.jpg",
+    "static/media/logo.svg": "/Rewards/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Rewards/index.html",
+    "main.43e581fd.css.map": "/Rewards/static/css/main.43e581fd.css.map",
+    "main.6e0bd5c9.js.map": "/Rewards/static/js/main.6e0bd5c9.js.map",
+    "787.e9922b5c.chunk.js.map": "/Rewards/static/js/787.e9922b5c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43e581fd.css",
+    "static/js/main.6e0bd5c9.js"
+  ]
+}
