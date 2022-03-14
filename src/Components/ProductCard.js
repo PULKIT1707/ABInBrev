@@ -3,27 +3,33 @@ import { width } from '@mui/system'
 import React, { useState } from 'react';
 
 const ProductCard = (props) => {
+  const [src, setSrc] = useState(props.src);
   const [title, setTitle] = useState(props.title);
   const [description, setDescription] = useState(props.description);
 
   const Desc = () => {
-    // debugger
-    if(description !== "")
-      return <p className="productText">{description}</p>;
-    else
-      return;
+    if(description !== ""){
+      return (<p className="productText">{description}</p>)
+    }else if(description === ""){
+      return ;
   }
+}
   return (
-    <div className="productCard">
-        <img src="https://picsum.photos/150" alt="" />
-        <div className="productInfo">
-            <div className="productName">
-                <p>{title}</p>
-                <img src="" alt=""></img>
-            </div>
-            <Desc/>
-        </div>
-    </div>
+    <div id = "displyPanel" className="productCard">
+      <img src={src} alt="" />
+      <div className="productInfo">
+          <div className="productName">
+              <p>{title}</p>
+              {
+                props.description ? <span><i class="fa-regular fa-heart"></i></span>: ''
+              }
+              
+          </div>
+          <Desc/>
+          
+      </div>
+  </div>
+    
   )
 }
 

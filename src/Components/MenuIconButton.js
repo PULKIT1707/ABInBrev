@@ -1,21 +1,43 @@
-import { Button } from '@mui/material'
+import { Button  } from '@mui/material'
 import '../css/style.css'
-import React from 'react'
+import React, { useState } from 'react'
+import { styled } from '@mui/material/styles';
+import { purple } from '@mui/material/colors';
+import MenuOptions from '../data/MenuOptions.json'
+import Modal from './Modal';
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.getContrastText(purple[500]),
+  backgroundColor: purple[500],
+  borderColor: 'none',
+  borderRadius: "0px",
+  '&:hover': {
+    backgroundColor: purple[700],
+    borderColor: 'none',
+  },
+}));
 
 const MenuIconButton = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <div>
-        {/* <Button><div className="fa-icons"><i class="fa-solid fa-vest">My Style</i></div></Button>
-        <Button><div className="fa-icons"><i class="fa-solid fa-utensils">My Eats</i></div></Button>
-        <Button><div className="fa-icons"><i class="fa-solid fa-backpack">My Travel</i></div></Button>
-        <Button><div className="fa-icons"><i class="fa-solid fa-files-medical">My Wellbeing</i></div></Button>
-        <Button><div className="fa-icons"><i class="fa-solid fa-laptop-mobile">My Tech</i></div></Button> */}
-        <Button><i class="fa-solid fa-vest">My Style</i></Button>
-        <Button><i class="fa-solid fa-utensils">My Eats</i></Button>
-        <Button><i class="fa-solid fa-backpack">My Travel</i></Button>
-        <Button><i class="fa-solid fa-files-medical">My Wellbeing</i></Button>
-        <Button><i class="fa-solid fa-laptop-mobile">My Tech</i></Button>
-    </div>
+    <div className='menuButtonBar'>
+      {
+        MenuOptions.map((cur) => {
+          return (
+            <>
+            {/* <Tooltip title={cur.name}> */}
+              <ColorButton variant="outlined">
+                <i class={cur.icon} style={{"display": "flex", "flexDirection": "column", "alignItems": "center", "paddingTop" : "10px"}}>
+                  <span className='iconButton'>{cur.name}</span>
+                </i>
+              </ColorButton>
+            {/* </Tooltip> */}
+            <Modal showModal={showModal} setShowModal={setShowModal}/>    
+            </>      
+          )
+        })
+      }
+   </div>
   )
 }
 

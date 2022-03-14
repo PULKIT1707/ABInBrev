@@ -3,16 +3,35 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fredoka', sans-serif;
+    text-align:justify;
+}
+
+.loginDiv{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin: auto;
+}
+
+.loginIcon{
+    background-image: url("../images/Login_icon.jpg");
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .footerClass{
     background-color: #F5F5F5;
-    
-    margin: 0px 20px;
+    margin: 20px 20px;
 }
 
 .footerContainer{
     margin: auto;
+}
+
+.customerService{
+  padding-top: 15px;
 }
 
 ul{
@@ -54,17 +73,22 @@ a{
 
 .rewardDescription{
     width: 33%;
+    background-color: #F5F5F5;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .rewardDescriptionHeader{
     color: blueviolet!important;
     font-weight: bold;
     font-size: small;
+    padding-bottom: 5px;
 }
 
 .rewardDescriptionSubHeader{
     font-weight: bold;
     font-size: large;
+    padding-bottom: 5px;
 }
 
 .rewardDescriptionContent{
@@ -72,7 +96,12 @@ a{
 }
 
 .rewardPicture{
+  padding-top: 20px;
     width: 33%;
+}
+
+hr{
+  padding-bottom: 5px;
 }
 
 .rewardBlock1{
@@ -80,11 +109,15 @@ a{
     flex-wrap: wrap;
     Justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .bannerClass{
     background-image: url("../images/Welcome_Banner.png");
-    height: "400px"!important;
+    margin: 0px 10%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .productPanelContent{
@@ -101,6 +134,7 @@ a{
     align-items: center;
     justify-content: space-between;
     color: blueviolet!important;
+    margin-bottom: 10px;
 }
 
 .productCard{
@@ -115,6 +149,8 @@ a{
 
 .productName{
     font-weight: bold;
+    display: flex;
+    justify-content: space-around;
 }
 
 .productText{
@@ -129,6 +165,7 @@ a{
 .ProductPanel{
     width: 78%;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .paraHeader{
@@ -140,7 +177,7 @@ a{
     width: 100%;
     /* background-color: #4d4d4d; */
     position: relative;
-    padding: 10px 200px;
+    padding: 10px 200px 0px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,12 +240,92 @@ a{
       background-color: purple!important;
   }
   
-/* .fa-icons{
-    display: flex;
-    flex-direction: column;
-} */
+  .iconButton{
+    padding-top: 10px;
+    font-size: x-small;
+    text-align: center;
+  }
 
+  .menuBar{
+    padding: 10px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-bottom: 20px; */
+  }
+
+  .menuButtonBar{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: grey;
+    /* background: var(--black); */
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+    width: 600px;
+    max-width: 100%;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+
+  }
+  
+  .modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modalDialog {
+    position: relative;
+    max-width: 800px;
+    max-height: 80vh;
+    border-radius: 5px;
+    background: var(--white);
+    overflow: auto;
+    cursor: default;
+  }
+  
+  .modalDialog > * {
+    padding: 1rem;
+  }
+  
+  .modalHeader,
+  .modal-footer {
+    background: var(--lightgray);
+  }
+  
+  .modalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .modalHeader .closeModal {
+    font-size: 1.5rem;
+  }
+  
+  .modal p + p {
+    margin-top: 1rem;
+  }
+  
   @media (max-width:600px) {
+    *{
+      text-align:justify;
+    }
     .nav{
         padding: 10px 25px;
     }
@@ -266,10 +383,21 @@ a{
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      /* height: calc(100vh - 50px);
-      overflow-y: auto; */
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+      z-index: 1;
     }
     .react-search-field {
         width: 100%;
+    }
+    .rewardPicture {
+      width: 80%;
+    }
+    .rewardDescription {
+      width: 80%;
+    }
+
+    .menuButtonBar{
+      width: unset;
     }
   }

@@ -1,11 +1,11 @@
 [
     { 
-        "value": "chocolate", 
-        "label": "chocolate" },
+        "value": "FasHion", 
+        "label": "Fashion" },
     { 
-        "value": "strawberry", 
-        "label": "strawberry" },
+        "value": "Electronics", 
+        "label": "Mobile" },
     { 
-        "value": "vanilla", 
-        "label": "Vanilla" }
+        "value": "Travel", 
+        "label": "Flight" }
   ]

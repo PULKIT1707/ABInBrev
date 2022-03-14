@@ -14,21 +14,27 @@ import ProductsPanel from './Components/ProductsPanel';
 import Navbar from './Components/Navbar';
 import Menu from './Components/Menu';
 import MenuIconButton from './Components/MenuIconButton';
+import Deals from './Components/Deals';
+import Modal from './Components/Modal';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
+  <BrowserRouter>
   <React.StrictMode>
-    <Navbar/>
-    <Menu/>
-    {/* <MenuIconButton/> */}
-    <Banner/>
+    <App/>
+    {/* <Navbar/> */}
+    {/* <Menu/>
+    <Banner/> */}
     {/* <Login /> */}
     {/* <SignIn/> */}
-    <Reward/>
+    {/* <Reward/>
     <Work/>
+    <Deals/>
     <ProductsPanel type="display"/>
     <ProductsPanel type="fav"/>
-    <Footer/>
-  </React.StrictMode>,
+    <Footer/> */}
+  </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 reportWebVitals();

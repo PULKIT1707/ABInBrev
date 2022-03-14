@@ -16,7 +16,7 @@ const Footer = () => {
                             <li><a href="#">Corporate</a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div className='customerService'>
                         <h4>Customer Service</h4>
                             <a href="#">Contact us</a>
                     </div>
@@ -48,8 +48,8 @@ const Footer = () => {
                 <div className="footerCol">
                     <h4>Connect with us</h4>
                     <div>
-                        <a className="social" href="#"><i className="fa-brands fa-facebook"></i></a>
-                        <a className="social" href="#"><i className="fa-brands fa-instagram"></i></a>
+                        <a className="social" href="https://www.facebook.com/abinbev/" target="_blank"><span style={{"color": "purple"}}><i class="fa-brands fa-facebook fa-xl"></i></span></a>
+                        <a className="social" href="https://www.instagram.com/abinbev/" target="_blank"><span style={{"color": "purple"}}><i class="fa-brands fa-instagram fa-xl"></i></span></a>
                     </div>
                 </div>
             </div>

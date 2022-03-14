@@ -5,7 +5,6 @@ import '../css/style.css';
 const Banner = () => {
   return (
     <div className="bannerClass">
-
     </div>
   )
 }
