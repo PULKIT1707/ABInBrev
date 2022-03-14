@@ -47,7 +47,6 @@ const Login = (props) => {
                     {props.error || error}
                     </Alert>
                 )}
-
             </div>
         </form>
     </div>

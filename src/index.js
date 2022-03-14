@@ -17,11 +17,12 @@ import MenuIconButton from './Components/MenuIconButton';
 import Deals from './Components/Deals';
 import Modal from './Components/Modal';
 import { BrowserRouter } from 'react-router-dom';
+import HomePage from './Components/HomePage';
 
 ReactDOM.render(
   <BrowserRouter>
   <React.StrictMode>
-    <App/>
+    <HomePage/>
     {/* <Navbar/> */}
     {/* <Menu/>
     <Banner/> */}

@@ -30,7 +30,7 @@ const ProductsPanel = (props) => {
   return (
     <div className="ProductPanel">
         <div className="productHeader">
-            <p className="paraHeader">Explore Brands</p>
+            <p className="paraHeader">{props.title}</p>
             <ColorButtonBorder variant="outlined">VIEW ALL</ColorButtonBorder>
         </div>
         
@@ -48,7 +48,7 @@ const ProductsPanel = (props) => {
         <div className="productPanelContent">
           {
             products.map((cur) => {
-              return <ProductCard title={cur.name} src={cur.src} description={cur.description} />
+              return <ProductCard title={cur.name} src={cur.src} description={cur.description} content={cur.content} />
             }
             )
           }
