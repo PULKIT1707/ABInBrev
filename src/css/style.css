@@ -156,6 +156,7 @@ hr{
 .productText{
     font-size: 12px;
     font-weight: 100;
+    text-align: center;
 }
 
 .productInfo{
@@ -253,6 +254,11 @@ hr{
     align-items: center;
     justify-content: space-evenly;
     /* margin-bottom: 20px; */
+  }
+
+  .menuParagraph{
+    color: purple;
+    font-weight: bold;
   }
 
   .menuButtonBar{

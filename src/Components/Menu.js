@@ -7,13 +7,11 @@ const Menu = () => {
   return (
     <div className='menuBar'>
         <Select
-        // value={selectedOption}
-        // onChange={this.handleChange}
         options={options}
       />
-      <p>Popular Categories</p>
+      <p className='menuParagraph'>Popular Categories</p>
       <MenuIconButton/>
-      <p>Explore All Brands</p>
+      <p className='menuParagraph'>Explore All Brands</p>
     </div>
   )
 }
